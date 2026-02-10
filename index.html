@@ -1,0 +1,1025 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b0b0b" />
+  <title>Arkara Cafe Shisha – Menü</title>
+
+  <style>
+    :root{
+      --background: 0 0% 5%;
+      --foreground: 0 0% 95%;
+      --card: 0 0% 8%;
+      --muted: 0 0% 15%;
+      --muted-foreground: 0 0% 65%;
+      --border: 0 0% 18%;
+      --primary: 1 63% 39%;
+      --primary-foreground: 0 0% 100%;
+      --accent: 25 80% 50%;
+      --radius: 12px;
+
+      --font-heading: ui-serif, Georgia, "Times New Roman", Times, serif;
+      --font-body: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      --transition-smooth: .35s cubic-bezier(.4,0,.2,1);
+    }
+
+    *{ box-sizing:border-box; border-color: hsl(var(--border)); }
+    html{ scroll-behavior:smooth; scroll-snap-type:y mandatory; background:hsl(var(--background)); }
+    body{ margin:0; color:hsl(var(--foreground)); font-family:var(--font-body); overflow-x:hidden; position:relative; min-height:100vh; }
+    a{ color:inherit; text-decoration:none; }
+
+    .page-bg{
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      pointer-events: none;
+      transform: translateZ(0);
+    }
+
+    .section-snap{ z-index: 1; background: transparent; }
+
+    .section-snap{
+      min-height:100vh;
+      scroll-snap-align:start;
+      scroll-snap-stop: always;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .hero-overlay{
+      position:absolute; inset:0;
+      background: linear-gradient(to bottom,
+        hsl(var(--background) / .70),
+        hsl(var(--background) / .35),
+        hsl(var(--background) / .92)
+      );
+      pointer-events:none;
+    }
+    .radial-overlay{
+      position:absolute; inset:0;
+      background: radial-gradient(circle at 50% 30%, transparent 0%, transparent 40%, hsl(var(--background) / .75) 100%);
+      pointer-events:none;
+    }
+    .smoke-overlay{
+      position:absolute; inset:0;
+      background: linear-gradient(180deg, hsla(0,0%,0%,.60) 0%, transparent 30%, transparent 70%, hsla(0,0%,0%,.60) 100%);
+      pointer-events:none;
+    }
+    .category-overlay{
+      position:absolute; inset:0;
+      opacity:.70;
+      mix-blend-mode:multiply;
+      pointer-events:none;
+    }
+
+    .topbar{
+      position:fixed; top:16px; right:16px; z-index:999;
+      display:flex; gap:6px;
+      background: hsl(var(--background)/.75);
+      border:1px solid hsl(var(--border)/.55);
+      border-radius:999px;
+      padding:6px;
+      backdrop-filter: blur(12px);
+    }
+    .langbtn{
+      border:1px solid transparent;
+      background:transparent;
+      color:hsl(var(--muted-foreground));
+      padding:8px 12px;
+      border-radius:999px;
+      font-weight:600;
+      font-size:13px;
+      transition: all .15s ease;
+      cursor:pointer;
+    }
+    .langbtn:hover{ color:hsl(var(--foreground)); }
+    .langbtn.active{
+      background:hsl(var(--primary));
+      color:hsl(var(--primary-foreground));
+      border-color:hsl(var(--primary));
+      box-shadow: 0 8px 26px hsl(var(--primary)/.18);
+    }
+
+    .searchwrap{
+      position:fixed; top:16px; left:16px; z-index:999;
+      width:min(520px, calc(100vw - 32px));
+      display:flex; gap:10px; align-items:center;
+      background: hsl(var(--background)/.75);
+      border:1px solid hsl(var(--border)/.55);
+      border-radius:999px;
+      padding:10px 14px;
+      backdrop-filter: blur(12px);
+    }
+    .searchwrap input{
+      width:100%;
+      border:none;
+      outline:none;
+      background:transparent;
+      color:hsl(var(--foreground));
+      font-size:14px;
+    }
+    .searchwrap .hint{
+      color:hsl(var(--muted-foreground));
+      font-size:12px;
+      white-space:nowrap;
+    }
+
+    .hero-inner{
+      position:relative; z-index:10;
+      min-height:100vh;
+      display:flex; flex-direction:column; align-items:center; justify-content:center;
+      text-align:center;
+      padding: 24px;
+    }
+    .logo{
+      width: 220px; height:220px;
+      object-fit:contain;
+      filter: drop-shadow(0 0 40px hsl(var(--primary)/.25));
+      animation: float 6s ease-in-out infinite;
+    }
+    .h1{
+      font-family:var(--font-heading);
+      font-weight:800;
+      letter-spacing:-.02em;
+      font-size: clamp(40px, 6vw, 76px);
+      margin: 18px 0 8px;
+      text-shadow: 0 0 20px hsl(var(--primary)/.5), 0 0 40px hsl(var(--primary)/.25);
+    }
+    .subtitle{
+      color:hsl(var(--muted-foreground));
+      font-size: clamp(16px, 2vw, 20px);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    .scroll-cta{
+      margin-top: 48px;
+      display:flex; flex-direction:column;
+      align-items:center; gap:8px;
+      color:hsl(var(--muted-foreground));
+      background:transparent;
+      border:none;
+      cursor:pointer;
+      transition: color .15s ease;
+    }
+    .scroll-cta:hover{ color:hsl(var(--primary)); }
+    .chev{
+      width:26px; height:26px;
+      animation: bounce 1s infinite;
+    }
+
+    .container{
+      position:relative; z-index:10;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 72px 18px;
+    }
+    .section-title{
+      text-align:center;
+      margin-bottom: 42px;
+    }
+    .section-title h2{
+      font-family:var(--font-heading);
+      font-weight:800;
+      margin:0 0 10px;
+      font-size: clamp(34px, 4vw, 60px);
+    }
+    .divider{
+      width:96px; height:4px;
+      background:hsl(var(--primary));
+      border-radius:999px;
+      margin: 0 auto;
+      box-shadow: 0 0 22px hsl(var(--primary)/.25);
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(1, minmax(0,1fr));
+      gap: 14px;
+    }
+    @media (min-width: 768px){
+      .grid{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+    }
+    @media (min-width: 1024px){
+      .grid{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+    }
+
+    .card{
+      border-radius: var(--radius);
+      border: 1px solid hsl(var(--border) / .35);
+      background: hsl(var(--card) / .55);
+      padding: 16px;
+      backdrop-filter: blur(6px);
+      transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+      min-height: 86px;
+    }
+    .card:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 10px 34px hsl(var(--primary)/.14);
+    }
+    .row{
+      display:flex; gap:14px;
+      align-items:flex-start;
+      justify-content:space-between;
+    }
+    .title{
+      font-family:var(--font-heading);
+      font-weight:700;
+      font-size: 18px;
+      margin:0 0 6px;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+      max-width: 100%;
+    }
+    .desc{
+      color:hsl(var(--muted-foreground));
+      font-size: 13px;
+      line-height: 1.35;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow:hidden;
+      margin:0;
+    }
+    .price{
+      font-weight:800;
+      color:hsl(var(--accent));
+      font-size: 18px;
+      white-space:nowrap;
+      margin-left: 10px;
+    }
+    .amount{
+      display:inline-flex;
+      align-items:center;
+      height: 26px;
+      padding: 0 10px;
+      border-radius: 999px;
+      border: 1px solid hsl(var(--border) / .45);
+      background: hsl(var(--card) / .35);
+      color: hsl(var(--muted-foreground));
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .contact-wrap{
+      position:relative; z-index:10;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 84px 18px 70px;
+      text-align:center;
+    }
+    .contact-grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      margin: 36px 0 28px;
+    }
+    @media (min-width: 768px){
+      .contact-grid{ grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    }
+    .contact-card{
+      border-radius: 999px;
+      border: 1px solid hsl(var(--border)/.35);
+      background: hsl(var(--card)/.45);
+      padding: 18px 16px;
+      backdrop-filter: blur(6px);
+    }
+    .contact-card h3{
+      margin: 8px 0 6px;
+      font-family:var(--font-heading);
+      font-size: 18px;
+      font-weight: 800;
+    }
+    .contact-card p{
+      margin:0;
+      color:hsl(var(--muted-foreground));
+      font-size: 13px;
+      line-height: 1.4;
+    }
+    .backtotop{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background:hsl(var(--primary));
+      color:hsl(var(--primary-foreground));
+      border: none;
+      cursor:pointer;
+      font-weight:800;
+      transition: transform .15s ease, filter .15s ease;
+    }
+    .backtotop:hover{ transform: scale(1.04); filter: brightness(1.05); }
+
+    .reveal{
+      opacity:0;
+      transform: translateY(22px);
+      transition: opacity .6s ease, transform .6s ease;
+      will-change: opacity, transform;
+    }
+    .reveal.is-visible{
+      opacity:1;
+      transform:none;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(-20%); animation-timing-function: cubic-bezier(.8,0,1,1); }
+      50% { transform: none; animation-timing-function: cubic-bezier(0,0,.2,1); }
+    }
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .errorbox{
+      max-width: 980px;
+      margin: 20px auto;
+      padding: 14px 16px;
+      border-radius: 12px;
+      border: 1px solid hsl(0 84% 60% / .35);
+      background: hsl(0 84% 60% / .12);
+      color: hsl(var(--foreground));
+      font-family: var(--font-body);
+    }
+    .tiny{ font-size:12px; color:hsl(var(--muted-foreground)); margin-top:8px; }
+    code{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  </style>
+</head>
+
+<body>
+  <div id="pageBg" class="page-bg" style="display:none"></div>
+
+  <div id="errorRoot"></div>
+
+  <div class="searchwrap" role="search" aria-label="Keresés a menüben">
+    <span class="hint">🔎</span>
+    <input id="q" type="search" placeholder="Keresés..." autocomplete="off" />
+    <span id="count" class="hint"></span>
+  </div>
+
+  <div class="topbar" role="navigation" aria-label="Nyelv választó">
+    <button class="langbtn" data-lang="HU">HU</button>
+    <button class="langbtn" data-lang="RO">RO</button>
+    <button class="langbtn" data-lang="EN">EN</button>
+  </div>
+
+  <section id="top" class="section-snap">
+    <div class="hero-overlay"></div>
+    <div class="radial-overlay"></div>
+
+    <div class="hero-inner">
+      <img id="logoImg" class="logo reveal" alt="" style="display:none" />
+
+      <div class="reveal" style="transition-delay:.08s">
+        <h1 class="h1" data-i18n="hero_title">Üdvözöljük</h1>
+      </div>
+
+      <p class="subtitle reveal" style="transition-delay:.16s" data-i18n="hero_sub"></p>
+
+      <button class="scroll-cta reveal" style="transition-delay:.24s" id="toMenu" type="button" aria-label="Scroll to menu">
+        <span data-i18n="scroll_cta">Görgessen le a menühöz</span>
+        <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6 9l6 6 6-6"></path>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <div id="menu-root"></div>
+
+  <div id="contact-root"></div>
+
+  <script>
+    (function(){
+
+      const SITE = {
+        app_title:   "Arkara Cafe Shisha – Menü",
+        brand_name:  "Arkara Cafe Shisha",
+        hero_title:  {HU:"Üdvözöljük", RO:"Bun venit", EN:"Welcome"},
+        hero_sub:    {HU:"Élvezze a prémium vízipipa élményt", RO:"Bucură-te de experiența premium de narghilea", EN:"Enjoy the premium shisha experience"},
+        scroll_cta:  {HU:"Görgessen le a menühöz", RO:"Derulează către meniu", EN:"Scroll to the menu"},
+
+        global_bg:   "assets/smoke-bg.jpg", 
+        logo:        "assets/logo.png",
+
+        contact: {
+          enabled: true,
+          title: {HU:"Kapcsolat", RO:"Contact", EN:"Contact"},
+          address_title: {HU:"Cím", RO:"Adresă", EN:"Address"},
+          phone_title:   {HU:"Telefon", RO:"Telefon", EN:"Phone"},
+          hours_title:   {HU:"Nyitvatartás", RO:"Program", EN:"Opening Hours"},
+          address_html:  `<a href="https://www.google.com/maps/place/Strada+M%C3%A1rton+%C3%81ron+54,+Miercurea+Ciuc+530003" target="_blank" rel="noopener"><span>Strada Márton Áron 54, 530003 Miercurea Ciuc</span></a>`,
+          phone: "+4 0754 485 907",
+          hours: "Hétfő - Vasárnap: 00:00 - 24:00",
+          copyright: null,
+        }
+      };
+
+      const CATEGORY_I18N = {
+        coffees: {HU:"Kávék", RO:"Cafele", EN:"Coffees"},
+        teas: {HU:"Teák", RO:"Ceaiuri", EN:"Teas"},
+        soft_drinks: {HU:"Üdítők", RO:"Băuturi răcoritoare", EN:"Soft drinks"},
+        alcoholic_drinks: {HU:"Alkoholos italok", RO:"Băuturi alcoolice", EN:"Alcoholic drinks"},
+        shots: {HU:"Felesek", RO:"Shoturi", EN:"Shots"},
+        cocktails: {HU:"Koktélok", RO:"Cocktailuri", EN:"Cocktails"},
+        alcohol_free_cocktails: {HU:"Alkoholmentes koktélok", RO:"Cocktailuri fără alcool", EN:"Alcohol free cocktails"},
+        beers: {HU:"Sörök", RO:"Beruri", EN:"Beers"},
+        cider: {HU:"Almabor (Cider)", RO:"Cidru", EN:"Cider"},
+        wines: {HU:"Borok", RO:"Vinuri", EN:"Wines"},
+        hookahs: {HU:"Vízpipák", RO:"Narghilele", EN:"Hookahs"},
+        snacks: {HU:"Rágcsálnivalók", RO:"Gustări", EN:"Snacks"},
+      };
+
+      const overlayPalette = {
+        spirits: "230 56% 22%",
+        cocktails: "16 53% 22%",
+        "non-alcoholic_cocktails": "350 37% 21%",
+        mocktails: "350 37% 21%",
+        beers: "30 4% 9%",
+        cider: "30 4% 9%",
+        wines: "30 4% 9%",
+        shisha: "18 36% 11%",
+        hookahs: "18 36% 11%",
+        coffees: "9 15% 18%",
+        teas: "210 22% 16%",
+        soft_drinks: "200 18% 16%",
+        alcoholic_drinks: "345 20% 16%",
+        shots: "20 28% 16%",
+        snacks: "40 22% 16%",
+      };
+
+      const CSV_FILE = "datas_with_lang.csv";
+      const SUPPORTED_LANGS = ["HU","RO","EN"];
+      const DEFAULT_LANG = "HU";
+
+      let MENU = null;
+      let ERRORS = [];
+      let activeLang = DEFAULT_LANG;
+      let query = "";
+
+      function stripBom(s){ return s.replace(/^\uFEFF/, ""); }
+      function normKey(k){
+        return (k ?? "")
+          .toString()
+          .trim()
+          .toLowerCase()
+          .replace(/\s+/g, "_");
+      }
+      function detectDelimiter(line){
+        const cands = ["; ", ";", ",", "\t", "|"];
+        let best = ";", bestCount = -1;
+        for (const d of cands){
+          const dd = d.trim();
+          const count = (line.match(new RegExp(escapeRegExp(dd), "g")) || []).length;
+          if (count > bestCount){ bestCount = count; best = dd; }
+        }
+        return best;
+      }
+        
+
+      function normLang(s){
+        let t = (s ?? "").toString().trim().toUpperCase().replace(/[^A-Z]/g, "");
+        if (t.length > 2) t = t.slice(0,2);
+        if (!SUPPORTED_LANGS.includes(t)) return "HU";
+        return t;
+      }
+      function pickLangText(map, lang){
+        if (!map) return "";
+        return map[lang] ?? map[DEFAULT_LANG] ?? map[Object.keys(map)[0]] ?? "";
+      }
+      function getOverlay(catKey){
+        const k = normKey(catKey);
+        return overlayPalette[k] ?? "230 56% 22%";
+      }
+
+      function escapeHtml(s){
+        return (s ?? "").toString()
+          .replaceAll("&","&amp;")
+          .replaceAll("<","&lt;")
+          .replaceAll(">","&gt;")
+          .replaceAll('"',"&quot;")
+          .replaceAll("'","&#039;");
+      }
+
+      function parseCsv(text,delimeter=null){
+        const out = [];
+        const t = stripBom(text ?? "");
+        if (!t.trim()) return out;
+
+        const lines = t.replace(/\r\n/g, "\n").replace(/\r/g, "\n").split("\n");
+        const firstNonEmpty = lines.find(l => l.trim() !== "");
+        if (!firstNonEmpty) return out;
+        const delim = delimeter??detectDelimiter(firstNonEmpty);
+    
+        let row = [];
+        let field = "";
+        let inQuotes = false;
+
+        function pushField(){
+          row.push(field);
+          field = "";
+        }
+        function pushRow(){
+          const any = row.some(v => (v ?? "").toString().trim() !== "");
+          if (any) out.push(row);
+          row = [];
+        }
+
+        for (let i = 0; i < t.length; i++){
+          const ch = t[i];
+
+          if (inQuotes){
+            if (ch === '"'){
+              const next = t[i+1];
+              if (next === '"'){ 
+                field += '"';
+                i++;
+              } else {
+                inQuotes = false;
+              }
+            } else {
+              field += ch;
+            }
+            continue;
+          }
+
+          if (ch === '"'){
+            inQuotes = true;
+            continue;
+          }
+
+          if (ch === delim){
+            pushField();
+            continue;
+          }
+
+          if (ch === "\n"){
+            pushField();
+            pushRow();
+            continue;
+          }
+
+          if (ch === "\r") continue;
+
+          field += ch;
+        }
+
+        pushField();
+        pushRow();
+
+        return { table: out, delimiter: delim };
+      }
+
+      function buildMenuFromRows(rawRows){
+        const errors = [];
+
+        if (!rawRows || rawRows.length < 2){
+          errors.push("Üres vagy érvénytelen CSV (nincs header + adat sor).");
+          return { menu: null, errors };
+        }
+
+        const headerRow = rawRows[0].map(h => normKey(h));
+        const idx = Object.create(null);
+        headerRow.forEach((h, i) => { if (h) idx[h] = i; });
+
+        const required = ["category","title","description","amount","price","lang"];
+        const missing = required.filter(k => idx[k] === undefined);
+        if (missing.length){
+          errors.push(`Hiányzó oszlop(ok): ${missing.join(", ")} | Talált oszlopok: ${headerRow.join(", ")}`);
+          return { menu: null, errors };
+        }
+
+        const byCat = new Map();
+        let catOrderCounter = 0;
+
+        for (let r = 1; r < rawRows.length; r++){
+          const row = rawRows[r];
+          const cat  = (row[idx.category] ?? "").toString().trim();
+          const title= (row[idx.title] ?? "").toString().trim();
+          const desc = (row[idx.description] ?? "").toString().trim();
+          const amount = (row[idx.amount] ?? "").toString().trim();
+          const price  = (row[idx.price] ?? "").toString().trim();
+          const lang   = normLang(row[idx.lang]);
+
+          const allEmpty = [cat,title,desc,amount,price].every(v => !v);
+          if (allEmpty) continue;
+          if (!cat) continue;
+
+          const catKey = normKey(cat);
+          if (!byCat.has(catKey)){
+            byCat.set(catKey, {
+              rawLabel: cat,
+              perLang: { HU:[], RO:[], EN:[] },
+              orderIndex: catOrderCounter++,
+            });
+          }
+          byCat.get(catKey).perLang[lang].push({ title, desc, amount, price });
+        }
+
+        const categories = [];
+        for (const [catKey, bucket] of byCat.entries()){
+          const labelMap = CATEGORY_I18N[catKey] || null;
+          const labels = {
+            HU: (labelMap && labelMap.HU) ? labelMap.HU : bucket.rawLabel,
+            RO: (labelMap && labelMap.RO) ? labelMap.RO : bucket.rawLabel,
+            EN: (labelMap && labelMap.EN) ? labelMap.EN : bucket.rawLabel,
+          };
+
+          const perLang = bucket.perLang;
+          const maxLen = Math.max(perLang.HU.length, perLang.RO.length, perLang.EN.length);
+
+          const items = [];
+          for (let i = 0; i < maxLen; i++){
+            const id = `${catKey}-${String(i+1).padStart(3,"0")}`;
+
+            let p = "", a = "";
+            for (const L of SUPPORTED_LANGS){
+              const rec = perLang[L][i];
+              if (!rec) continue;
+              if (!p && rec.price && rec.price.trim()) p = rec.price.trim();
+              if (!a && rec.amount && rec.amount.trim()) a = rec.amount.trim();
+            }
+
+            const langs = {
+              HU: { title:"", desc:"" },
+              RO: { title:"", desc:"" },
+              EN: { title:"", desc:"" },
+            };
+            for (const L of SUPPORTED_LANGS){
+              const rec = perLang[L][i];
+              if (!rec) continue;
+              langs[L] = { title: (rec.title||"").trim(), desc: (rec.desc||"").trim() };
+            }
+
+            items.push({
+              id,
+              order: i + 1,
+              price: p,
+              currency: "RON",
+              amount: a,
+              langs
+            });
+          }
+
+          categories.push({
+            key: catKey,
+            labels,
+            overlay_hsl: getOverlay(catKey),
+            items
+          });
+        }
+
+        categories.sort((a,b) => (byCat.get(a.key).orderIndex - byCat.get(b.key).orderIndex));
+
+        const menu = {
+          meta: {
+            langs: SUPPORTED_LANGS,
+            default_lang: DEFAULT_LANG,
+            generated_at: new Date().toISOString(),
+            source: CSV_FILE,
+          },
+          categories
+        };
+
+        return { menu, errors };
+      }
+
+      function renderErrors(){
+        const root = document.getElementById("errorRoot");
+        if (!root) return;
+        if (!ERRORS.length){
+          root.innerHTML = "";
+          return;
+        }
+
+        const isFileProto = location.protocol === "file:";
+        const tip = isFileProto
+          ? `Tipp: most <code>file://</code> alól futsz, a böngésző blokkolhatja a CSV betöltést. Indíts egy szervert (pl. <code>python -m http.server 8000</code>) és nyisd meg <code>http://localhost:8000/</code> alól.`
+          : `Tipp: legyen a fájl neve pontosan <code>${escapeHtml(CSV_FILE)}</code>, és ugyanabban a mappában legyen mint ez a HTML.`;
+
+        root.innerHTML = `
+          <div class="errorbox">
+            <strong>CSV beolvasási hiba:</strong>
+            <ul>
+              ${ERRORS.map(e => `<li>${escapeHtml(e)}</li>`).join("")}
+            </ul>
+            <div class="tiny">${tip}</div>
+          </div>
+        `;
+      }
+
+      function applySite(){
+        document.title = SITE.app_title || document.title;
+
+        const bg = document.getElementById("pageBg");
+        if (bg && SITE.global_bg){
+          bg.style.backgroundImage = `url('${SITE.global_bg}')`;
+          bg.style.display = "";
+        }
+
+        const logo = document.getElementById("logoImg");
+        if (logo && SITE.logo){
+          logo.src = SITE.logo;
+          logo.alt = SITE.brand_name || "Logo";
+          logo.style.display = "";
+        }
+      }
+
+      const i18nStatic = {
+        hero_title: SITE.hero_title,
+        hero_sub: SITE.hero_sub,
+        scroll_cta: SITE.scroll_cta,
+        contact_title: SITE.contact?.title || {HU:"Kapcsolat", RO:"Contact", EN:"Contact"},
+        contact_address_title: SITE.contact?.address_title || {HU:"Cím", RO:"Adresă", EN:"Address"},
+        contact_phone_title: SITE.contact?.phone_title || {HU:"Telefon", RO:"Telefon", EN:"Phone"},
+        contact_hours_title: SITE.contact?.hours_title || {HU:"Nyitvatartás", RO:"Program", EN:"Opening Hours"},
+        back_to_top: {HU:"Vissza a tetejére", RO:"Înapoi sus", EN:"Back to top"},
+        search_placeholder: {HU:"Keresés...", RO:"Căutare...", EN:"Search..."},
+      };
+
+      function getSavedLang(){
+        const v = localStorage.getItem("menu_lang");
+        if (v && SUPPORTED_LANGS.includes(v)) return v;
+        return DEFAULT_LANG;
+      }
+      function setSavedLang(lang){ localStorage.setItem("menu_lang", lang); }
+
+      function applyStaticI18n(){
+        const q = document.getElementById("q");
+        if (q) q.placeholder = pickLangText(i18nStatic.search_placeholder, activeLang);
+
+        document.querySelectorAll("[data-i18n]").forEach(el => {
+          const key = el.getAttribute("data-i18n");
+          const dict = i18nStatic[key];
+          if (!dict) return;
+          el.textContent = pickLangText(dict, activeLang);
+        });
+      }
+
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("is-visible"); });
+      }, {threshold: 0.12});
+
+      function observeReveal(container){
+        (container || document).querySelectorAll(".reveal").forEach(el => io.observe(el));
+      }
+
+      const root = document.getElementById("menu-root");
+      const qInput = document.getElementById("q");
+      const countEl = document.getElementById("count");
+
+      function formatPrice(p, cur){
+        const s = (p ?? "").toString().trim();
+        const c = (cur ?? "RON").toString().trim();
+        if (!s) return "";
+        const n = Number(s.replace(",", "."));
+        if (Number.isFinite(n)) return n.toFixed(2) + " " + c;
+        return s + " " + c;
+      }
+
+      function itemText(item){
+        const L = item.langs || {};
+        const t = (L[activeLang] && L[activeLang].title) || (L[DEFAULT_LANG] && L[DEFAULT_LANG].title) || "";
+        const d = (L[activeLang] && L[activeLang].desc)  || (L[DEFAULT_LANG] && L[DEFAULT_LANG].desc)  || "";
+        return {title:t, desc:d};
+      }
+
+      function renderMenu(){
+        if (!root) return;
+
+        if (!MENU || !MENU.categories){
+          root.innerHTML = `
+            <section class="section-snap">
+              <div class="container">
+                <div class="section-title">
+                  <h2>Menu</h2>
+                  <div class="divider"></div>
+                </div>
+                <div class="errorbox">Nem található feldolgozható menü adat a CSV-ben.</div>
+              </div>
+            </section>
+          `;
+          return;
+        }
+
+        const cats = MENU.categories;
+        let totalVisible = 0;
+
+        const html = cats.map((cat, idx) => {
+        const catLabel = pickLangText(cat.labels || {HU:cat.key,RO:cat.key,EN:cat.key}, activeLang) || cat.key;
+        const overlay = cat.overlay_hsl || "230 56% 22%";
+
+        const catHay = [
+            catLabel,
+            cat.key || "",
+            ...(cat.labels ? Object.values(cat.labels) : [])
+        ].join(" ").toLowerCase();
+
+        const itemsHtml = (cat.items || []).map(it => {
+            const {title, desc} = itemText(it);
+
+            const hay = (catHay + " " + title + " " + desc + " " + (it.amount||"") + " " + (it.id||"")).toLowerCase();
+            const visible = query ? hay.includes(query) : true;
+            if (!visible) return null;
+
+            totalVisible++;
+            const priceStr = formatPrice(it.price, it.currency);
+            const amountStr = (it.amount ?? "").toString().trim();
+
+            return `
+              <div class="card reveal">
+                <div class="row">
+                  <div style="flex:1; min-width:0">
+                    <h3 class="title" title="${escapeHtml(title)}">${escapeHtml(title || it.id || "")}</h3>
+                    <p class="desc">${escapeHtml(desc || "")}</p>
+                  </div>
+
+                  <div style="display:flex; flex-direction:column; align-items:flex-end; gap:8px; margin-left:10px;">
+                    ${amountStr ? `<div class="amount">${escapeHtml(amountStr)}</div>` : ``}
+                    <div class="price">${escapeHtml(priceStr)}</div>
+                  </div>
+                </div>
+              </div>
+            `;
+          }).filter(Boolean).join("");
+
+          if (!itemsHtml) return "";
+
+          const idAttr = idx === 0 ? `id="menu-start"` : "";
+
+          return `
+            <section class="section-snap">
+              <div class="category-overlay" style="background:hsl(${escapeHtml(overlay)});"></div>
+              <div class="smoke-overlay"></div>
+
+              <div class="container" ${idAttr}>
+                <div class="section-title reveal">
+                  <h2>${escapeHtml(catLabel)}</h2>
+                  <div class="divider"></div>
+                </div>
+                <div class="grid">${itemsHtml}</div>
+              </div>
+            </section>
+          `;
+        }).join("");
+
+        root.innerHTML = html || `
+          <section class="section-snap">
+            <div class="container">
+              <div class="section-title">
+                <h2>Menu</h2>
+                <div class="divider"></div>
+              </div>
+              <div class="errorbox">Nincs találat a keresésre.</div>
+            </div>
+          </section>
+        `;
+
+        observeReveal(root);
+
+        if (countEl) countEl.textContent = totalVisible ? `${totalVisible}` : "";
+      }
+
+      function renderContact(){
+        const cRoot = document.getElementById("contact-root");
+        if (!cRoot) return;
+
+        if (!SITE.contact || !SITE.contact.enabled){
+          cRoot.innerHTML = "";
+          return;
+        }
+
+        const year = new Date().getFullYear();
+        const copyright =
+          SITE.contact.copyright
+          ? SITE.contact.copyright
+          : `© ${year} ${SITE.brand_name}. All rights reserved.`;
+
+        cRoot.innerHTML = `
+          <section class="section-snap">
+            <div class="category-overlay" style="background:hsla(9, 15%, 18%, 1.00); opacity:.60;"></div>
+            <div class="smoke-overlay"></div>
+
+            <div class="contact-wrap">
+              ${SITE.logo ? `<img class="logo reveal" style="width:140px;height:140px;filter:drop-shadow(0 0 20px hsla(0,0%,100%,.08))" src="${escapeHtml(SITE.logo)}" alt="${escapeHtml(SITE.brand_name)}" />` : ""}
+
+              <div class="reveal" style="transition-delay:.10s">
+                <h2 style="font-family:var(--font-heading); font-size: clamp(34px,4vw,56px); margin:14px 0 0;" data-i18n="contact_title">Kapcsolat</h2>
+                <div class="divider" style="margin-top:14px;"></div>
+              </div>
+
+              <div class="contact-grid">
+                <div class="contact-card reveal" style="transition-delay:.18s">
+                  <h3 data-i18n="contact_address_title">Cím</h3>
+                  <p>${SITE.contact.address_html || ""}</p>
+                </div>
+                <div class="contact-card reveal" style="transition-delay:.26s">
+                  <h3 data-i18n="contact_phone_title">Telefon</h3>
+                  <p>${escapeHtml(SITE.contact.phone || "")}</p>
+                </div>
+                <div class="contact-card reveal" style="transition-delay:.34s">
+                  <h3 data-i18n="contact_hours_title">Nyitvatartás</h3>
+                  <p>${escapeHtml(SITE.contact.hours || "")}</p>
+                </div>
+              </div>
+
+              <button class="backtotop reveal" style="transition-delay:.40s" type="button" id="backTop">↑ <span data-i18n="back_to_top">Vissza a tetejére</span></button>
+
+              <p class="tiny reveal" style="transition-delay:.48s; margin-top:18px;">
+                ${escapeHtml(copyright)}
+              </p>
+            </div>
+          </section>
+        `;
+
+        const backTop = document.getElementById("backTop");
+        backTop && backTop.addEventListener("click", () => {
+          document.getElementById("top")?.scrollIntoView({behavior:"smooth", block:"start"});
+        });
+
+        observeReveal(cRoot);
+        applyStaticI18n(); 
+      }
+
+      function setupUi(){
+        activeLang = getSavedLang();
+        const langBtns = Array.from(document.querySelectorAll(".langbtn"));
+        function refreshLangBtns(){
+          langBtns.forEach(b => b.classList.toggle("active", b.dataset.lang === activeLang));
+        }
+        langBtns.forEach(b => {
+          b.addEventListener("click", () => {
+            activeLang = b.dataset.lang;
+            setSavedLang(activeLang);
+            refreshLangBtns();
+            applyStaticI18n();
+            renderMenu();
+          });
+        });
+        refreshLangBtns();
+
+        qInput && qInput.addEventListener("input", () => {
+          query = (qInput.value || "").trim().toLowerCase();
+          renderMenu();
+
+            if (query) {
+                requestAnimationFrame(() => {
+                const firstSection = root?.querySelector("section.section-snap");
+                firstSection?.scrollIntoView({ behavior: "smooth", block: "start" });
+                });
+            }
+        });
+
+        const toMenu = document.getElementById("toMenu");
+        toMenu && toMenu.addEventListener("click", () => {
+          const start = document.getElementById("menu-start");
+          start && start.scrollIntoView({behavior:"smooth", block:"start"});
+        });
+
+        applyStaticI18n();
+        observeReveal(document);
+      }
+
+      async function loadCsvAndBuild(){
+        ERRORS = [];
+        renderErrors();
+
+        try{
+          const res = await fetch(CSV_FILE, { cache: "no-store" });
+          if (!res.ok) throw new Error(`HTTP ${res.status} – ${res.statusText}`);
+          const text = await res.text();
+          $text=text;
+          const parsed = parseCsv(text,";");
+          if (!parsed || !parsed.table || !parsed.table.length){
+            throw new Error("Nem sikerült CSV-t parse-olni (üres/hibás formátum).");
+          }
+
+          const { menu, errors } = buildMenuFromRows(parsed.table);
+          if (errors && errors.length) ERRORS.push(...errors);
+          MENU = menu;
+          console.log(parsed);
+        } catch (e){
+          MENU = null;
+          ERRORS.push(`Nem tudtam betölteni: ${CSV_FILE}`);
+          ERRORS.push(String(e?.message || e));
+        }
+
+        renderErrors();
+        renderMenu();
+      }
+
+      applySite();
+      setupUi();
+      renderContact();
+      loadCsvAndBuild();
+
+    })();
+  </script>
+</body>
+</html>
