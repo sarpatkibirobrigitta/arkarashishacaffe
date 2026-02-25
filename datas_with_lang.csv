@@ -17,7 +17,7 @@ Coffees;Latte;;;13;EN
 Coffees;Ízesített latte;;;15;HU
 Coffees;Latte aromată;;;15;RO
 Coffees;Flavored Latte;;;15;EN
-Teas;Tea;gyömbér / citrom / menta / barack-málna, erdei gyümölcs;;10;HU
+Teas;Tea;gyömbér / citrom / menta / barack-málna / erdei gyümölcs;;10;HU
 Teas;Ceai;ghimbru / lămâie / mentă / piersică-zmeură / fructe de pădure;;10;RO
 Teas;Tea;ginger / lemon / mint / peach-raspberry / forest fruit;;10;EN
 Soft drinks;Coca Cola;;250 ml;10;HU
@@ -128,18 +128,18 @@ Alcoholic drinks;XEREDA VODKA;;1000 ml;80;EN
 Alcoholic drinks;XEREDA VODKA;;50 ml;8;HU
 Alcoholic drinks;XEREDA VODKA;;50 ml;8;RO
 Alcoholic drinks;XEREDA VODKA;;50 ml;8;EN
-Alcoholic drinks;BAMBU XO;+ 5 cola / pipa (narghilea);700 ml;420;HU
-Alcoholic drinks;BAMBU XO;+ 5 cola / narghilea;700 ml;420;RO
-Alcoholic drinks;BAMBU XO;+ 5 cola / hookah;700 ml;420;EN
-Alcoholic drinks;BAMBU XO;;50 ml;30;HU
-Alcoholic drinks;BAMBU XO;;50 ml;30;RO
-Alcoholic drinks;BAMBU XO;;50 ml;30;EN
-Alcoholic drinks;BAMBU;+ 5 cola / pipa (narghilea);700 ml;364;HU
-Alcoholic drinks;BAMBU;+ 5 cola / narghilea;700 ml;364;RO
-Alcoholic drinks;BAMBU;+ 5 cola / hookah;700 ml;364;EN
-Alcoholic drinks;BAMBU;;50 ml;26;HU
-Alcoholic drinks;BAMBU;;50 ml;26;RO
-Alcoholic drinks;BAMBU;;50 ml;26;EN
+Alcoholic drinks;BUMBU XO;+ 5 cola / pipa (narghilea);700 ml;420;HU
+Alcoholic drinks;BUMBU XO;+ 5 cola / narghilea;700 ml;420;RO
+Alcoholic drinks;BUMBU XO;+ 5 cola / hookah;700 ml;420;EN
+Alcoholic drinks;BUMBU XO;;50 ml;30;HU
+Alcoholic drinks;BUMBU XO;;50 ml;30;RO
+Alcoholic drinks;BUMBU XO;;50 ml;30;EN
+Alcoholic drinks;BUMBU;+ 5 cola / pipa (narghilea);700 ml;364;HU
+Alcoholic drinks;BUMBU;+ 5 cola / narghilea;700 ml;364;RO
+Alcoholic drinks;BUMBU;+ 5 cola / hookah;700 ml;364;EN
+Alcoholic drinks;BUMBU;;50 ml;26;HU
+Alcoholic drinks;BUMBU;;50 ml;26;RO
+Alcoholic drinks;BUMBU;;50 ml;26;EN
 Alcoholic drinks;BACARDI CARTA BLANCA;;1000 ml;300;HU
 Alcoholic drinks;BACARDI CARTA BLANCA;;1000 ml;300;RO
 Alcoholic drinks;BACARDI CARTA BLANCA;;1000 ml;300;EN
@@ -464,6 +464,7 @@ Snacks;Peanuts;;100 g;5;EN
 Snacks;ROPI;;100 gr;5;HU
 Snacks;Ropi (sticksuri sărate);;100 g;5;RO
 Snacks;Salty pretzel sticks;;100 g;5;EN
+
 
 
 
