@@ -8,9 +8,9 @@ Coffees;Americano;;;10;EN
 Coffees;Jegeskávé;;;13;HU
 Coffees;Cafea cu gheață;;;13;RO
 Coffees;Iced Coffee;;;13;EN
-Coffees;Ízesített jegeskávé;kókusz / karamell;;15;HU
-Coffees;Cafea cu gheață aromată;cocos / caramel;;15;RO
-Coffees;Flavored Iced Coffee;coconut / caramel;;15;EN
+Coffees;Ízesített jegeskávé;vanília / karamell / sós karamell / eper / pumpkin spice;;15;HU
+Coffees;Cafea cu gheață aromată;vanilie / caramel / caramel sărat / căpșuni / pumpkin spice ;;15;RO
+Coffees;Flavored Iced Coffee;vanilla / caramel / salted caramel / strawberry / pumpkin spice;;15;EN
 Coffees;Latte;;;13;HU
 Coffees;Latte;;;13;RO
 Coffees;Latte;;;13;EN
@@ -389,3 +389,4 @@ Snacks;Peanuts;;100 g;5;EN
 Snacks;ROPI;;100 gr;5;HU
 Snacks;Ropi (sticksuri sărate);;100 g;5;RO
 Snacks;Salty pretzel sticks;;100 g;5;EN
+
