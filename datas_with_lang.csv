@@ -80,9 +80,9 @@ Alcoholic drinks;Jack Daniel's Honey;+ 5 cola / hookah;1000 ml;400;EN
 Alcoholic drinks;Jack Daniel's Honey;;50 ml;20;HU
 Alcoholic drinks;Jack Daniel's Honey;;50 ml;20;RO
 Alcoholic drinks;Jack Daniel's Honey;;50 ml;20;EN
-Alcoholic drinks;Jack Daniel's Fire;+ 5 cola / pipa (narghilea);1000 ml;280;HU
-Alcoholic drinks;Jack Daniel's Fire;+ 5 cola / narghilea;1000 ml;280;RO
-Alcoholic drinks;Jack Daniel's Fire;+ 5 cola / hookah;1000 ml;280;EN
+Alcoholic drinks;Jack Daniel's Fire;+ 5 cola / pipa (narghilea);700 ml;280;HU
+Alcoholic drinks;Jack Daniel's Fire;+ 5 cola / narghilea;700 ml;280;RO
+Alcoholic drinks;Jack Daniel's Fire;+ 5 cola / hookah;700 ml;280;EN
 Alcoholic drinks;Jack Daniel's Fire;;50 ml;20;HU
 Alcoholic drinks;Jack Daniel's Fire;;50 ml;20;RO
 Alcoholic drinks;Jack Daniel's Fire;;50 ml;20;EN
@@ -164,9 +164,9 @@ Alcoholic drinks;SIR BONET;;700 ml;210;EN
 Alcoholic drinks;SIR BONET;;50 ml;15;HU
 Alcoholic drinks;SIR BONET;;50 ml;15;RO
 Alcoholic drinks;SIR BONET;;50 ml;15;EN
-Alcoholic drinks;JAGERMAISTER;+ 5 cola / pipa (narghilea);1000 ml;280;HU
-Alcoholic drinks;JAGERMAISTER;+ 5 cola / narghilea;1000 ml;280;RO
-Alcoholic drinks;JAGERMAISTER;+ 5 cola / hookah;1000 ml;280;EN
+Alcoholic drinks;JAGERMAISTER;+ 5 cola / pipa (narghilea);1000 ml;300;HU
+Alcoholic drinks;JAGERMAISTER;+ 5 cola / narghilea;1000 ml;300;RO
+Alcoholic drinks;JAGERMAISTER;+ 5 cola / hookah;1000 ml;300;EN
 Alcoholic drinks;JAGERMAISTER;;50 ml;14;HU
 Alcoholic drinks;JAGERMAISTER;;50 ml;14;RO
 Alcoholic drinks;JAGERMAISTER;;50 ml;14;EN
@@ -464,5 +464,6 @@ Snacks;Peanuts;;100 g;5;EN
 Snacks;ROPI;;100 gr;5;HU
 Snacks;Ropi (sticksuri sărate);;100 g;5;RO
 Snacks;Salty pretzel sticks;;100 g;5;EN
+
 
 
