@@ -17,63 +17,75 @@ Coffees;Latte;;;13;EN
 Coffees;Ízesített latte;;;15;HU
 Coffees;Latte aromată;;;15;RO
 Coffees;Flavored Latte;;;15;EN
-Teas;Tea;erdei gyümölcs / citrom / menta;;10;HU
-Teas;Ceai;fructe de pădure / lămâie / mentă;;10;RO
-Teas;Tea;berries / lemon / mint;;10;EN
-Soft drinks;Coca Cola;;250 ml;9;HU
-Soft drinks;Coca Cola;;250 ml;9;RO
-Soft drinks;Coca Cola;;250 ml;9;EN
-Soft drinks;Coca Cola Zero;;250 ml;9;HU
-Soft drinks;Coca Cola Zero;;250 ml;9;RO
-Soft drinks;Coca Cola Zero;;250 ml;9;EN
-Soft drinks;Fanta;narancs / szőlő;250 ml;9;HU
-Soft drinks;Fanta;portocală / struguri;250 ml;9;RO
-Soft drinks;Fanta;orange / grape;250 ml;9;EN
-Soft drinks;Sprite;;250 ml;9;HU
-Soft drinks;Sprite;;250 ml;9;RO
-Soft drinks;Sprite;;250 ml;9;EN
-Soft drinks;Schweppes;mandarin / pink / tonic;250 ml;9;HU
-Soft drinks;Schweppes;mandarină / pink / tonic;250 ml;9;RO
-Soft drinks;Schweppes;mandarin / pink / tonic;250 ml;9;EN
-Soft drinks;Cappy;körte / barack;250 ml;12;HU
-Soft drinks;Cappy;pară / piersică;250 ml;12;RO
-Soft drinks;Cappy;pear / peach;250 ml;12;EN
+Teas;Tea;gyömbér / citrom / menta / barack-málna, erdei gyümölcs;;10;HU
+Teas;Ceai;ghimbru / lămâie / mentă / piersică-zmeură / fructe de pădure;;10;RO
+Teas;Tea;ginger / lemon / mint / peach-raspberry / forest fruit;;10;EN
+Soft drinks;Coca Cola;;250 ml;10;HU
+Soft drinks;Coca Cola;;250 ml;10;RO
+Soft drinks;Coca Cola;;250 ml;10;EN
+Soft drinks;Pepsi;;250 ml;10;HU
+Soft drinks;Pepsi;;250 ml;10;RO
+Soft drinks;Pepsi;;250 ml;10;EN
+Soft drinks;Pepsi vintage;;250 ml;12;HU
+Soft drinks;Pepsi vintage;;250 ml;12;RO
+Soft drinks;Pepsi vintage;;250 ml;12;EN
+Soft drinks;Coca Cola Zero;;250 ml;10;HU
+Soft drinks;Coca Cola Zero;;250 ml;10;RO
+Soft drinks;Coca Cola Zero;;250 ml;10;EN
+Soft drinks;Fanta;narancs / szőlő;250 ml;10;HU
+Soft drinks;Fanta;portocală / struguri;250 ml;10;RO
+Soft drinks;Fanta;orange / grape;250 ml;10;EN
+Soft drinks;Sprite;;250 ml;10;HU
+Soft drinks;Sprite;;250 ml;10;RO
+Soft drinks;Sprite;;250 ml;10;EN
+Soft drinks;Schweppes;mandarin / pink / tonic / bitter lemon;250 ml;10;HU
+Soft drinks;Schweppes;mandarină / pink / tonic / bitter lemon;250 ml;10;RO
+Soft drinks;Schweppes;mandarin / pink / tonic/ bitter lemon;250 ml;10;EN
+Soft drinks;Cappy;körte / barack / vérnarancs / narancs;250 ml;12;HU
+Soft drinks;Cappy;pară / piersică / portocaliu sângeriu / portocale;250 ml;12;RO
+Soft drinks;Cappy;pear / peach / blood orange / orange;250 ml;12;EN
 Soft drinks;Santal;alma;200 ml;10;HU
 Soft drinks;Santal;măr;200 ml;10;RO
 Soft drinks;Santal;apple;200 ml;10;EN
-Soft drinks;HELL;black cherry / strong apple;250 ml;8;HU
-Soft drinks;HELL;cireșe negre / măr verde;250 ml;8;RO
-Soft drinks;HELL;black cherry / green apple;250 ml;8;EN
+Soft drinks;HELL;black cherry / strong apple / klasszikus;250 ml;8;HU
+Soft drinks;HELL;cireșe negre / măr verde / clasic;250 ml;8;RO
+Soft drinks;HELL;black cherry / green apple / classic;250 ml;8;EN
 Soft drinks;RED BULL;;250 ml;13;HU
 Soft drinks;RED BULL;;250 ml;13;RO
 Soft drinks;RED BULL;;250 ml;13;EN
-Soft drinks;Limonádé;kiwi / sárga dinnye / erdei gyümölcs / eper;500 ml;14;HU
-Soft drinks;Limonadă;kiwi / pepene galben / fructe de pădure / căpșuni;500 ml;14;RO
-Soft drinks;Lemonade;kiwi / honeydew melon / berries / strawberry;500 ml;14;EN
+Soft drinks;Limonádé;kiwi / eper / mangó / málna / áfonya / dinnye / bodza / sárga dinnye;500 ml;14;HU
+Soft drinks;Limonadă;kiwi / căpșuni / mango / zmeură / afine / pepene / soc / pepene galben;500 ml;14;RO
+Soft drinks;Lemonade;kiwi / strawberry / mango / raspberry / blueberry / melon / elderberry / yellow melon;500 ml;14;EN
 Soft drinks;FRESH;narancs;300 ml;15;HU
 Soft drinks;FRESH;portocală;300 ml;15;RO
 Soft drinks;FRESH;orange;300 ml;15;EN
 Soft drinks;Víz;szénsavas / szénsavmentes;330 ml;7;HU
 Soft drinks;Apă;carbogazoasă / plată;330 ml;7;RO
 Soft drinks;Water;sparkling / still;330 ml;7;EN
-Alcoholic drinks;Jack Daniel's;+ 5 cola / pipa (narghilea);1000 ml;300;HU
-Alcoholic drinks;Jack Daniel's;+ 5 cola / narghilea;1000 ml;300;RO
-Alcoholic drinks;Jack Daniel's;+ 5 cola / hookah;1000 ml;300;EN
-Alcoholic drinks;Jack Daniel's;;50 ml;15;HU
-Alcoholic drinks;Jack Daniel's;;50 ml;15;RO
-Alcoholic drinks;Jack Daniel's;;50 ml;15;EN
-Alcoholic drinks;Jack Daniel's Apple;+ 5 cola / pipa (narghilea);700 ml;270;HU
-Alcoholic drinks;Jack Daniel's Apple;+ 5 cola / narghilea;700 ml;270;RO
-Alcoholic drinks;Jack Daniel's Apple;+ 5 cola / hookah;700 ml;270;EN
-Alcoholic drinks;Jack Daniel's Apple;;50 ml;19;HU
-Alcoholic drinks;Jack Daniel's Apple;;50 ml;19;RO
-Alcoholic drinks;Jack Daniel's Apple;;50 ml;19;EN
-Alcoholic drinks;Jack Daniel's Honey;+ 5 cola / pipa (narghilea);1000 ml;380;HU
-Alcoholic drinks;Jack Daniel's Honey;+ 5 cola / narghilea;1000 ml;380;RO
-Alcoholic drinks;Jack Daniel's Honey;+ 5 cola / hookah;1000 ml;380;EN
-Alcoholic drinks;Jack Daniel's Honey;;50 ml;19;HU
-Alcoholic drinks;Jack Daniel's Honey;;50 ml;19;RO
-Alcoholic drinks;Jack Daniel's Honey;;50 ml;19;EN
+Alcoholic drinks;Jack Daniel's;+ 5 cola / pipa (narghilea);1000 ml;360;HU
+Alcoholic drinks;Jack Daniel's;+ 5 cola / narghilea;1000 ml;360;RO
+Alcoholic drinks;Jack Daniel's;+ 5 cola / hookah;1000 ml;360;EN
+Alcoholic drinks;Jack Daniel's;;50 ml;18;HU
+Alcoholic drinks;Jack Daniel's;;50 ml;18;RO
+Alcoholic drinks;Jack Daniel's;;50 ml;18;EN
+Alcoholic drinks;Jack Daniel's Apple;+ 5 cola / pipa (narghilea);700 ml;400;HU
+Alcoholic drinks;Jack Daniel's Apple;+ 5 cola / narghilea;700 ml;400;RO
+Alcoholic drinks;Jack Daniel's Apple;+ 5 cola / hookah;700 ml;400;EN
+Alcoholic drinks;Jack Daniel's Apple;;50 ml;20;HU
+Alcoholic drinks;Jack Daniel's Apple;;50 ml;20;RO
+Alcoholic drinks;Jack Daniel's Apple;;50 ml;20;EN
+Alcoholic drinks;Jack Daniel's Honey;+ 5 cola / pipa (narghilea);1000 ml;400;HU
+Alcoholic drinks;Jack Daniel's Honey;+ 5 cola / narghilea;1000 ml;400;RO
+Alcoholic drinks;Jack Daniel's Honey;+ 5 cola / hookah;1000 ml;400;EN
+Alcoholic drinks;Jack Daniel's Honey;;50 ml;20;HU
+Alcoholic drinks;Jack Daniel's Honey;;50 ml;20;RO
+Alcoholic drinks;Jack Daniel's Honey;;50 ml;20;EN
+Alcoholic drinks;Jack Daniel's Fire;+ 5 cola / pipa (narghilea);1000 ml;280;HU
+Alcoholic drinks;Jack Daniel's Fire;+ 5 cola / narghilea;1000 ml;280;RO
+Alcoholic drinks;Jack Daniel's Fire;+ 5 cola / hookah;1000 ml;280;EN
+Alcoholic drinks;Jack Daniel's Fire;;50 ml;20;HU
+Alcoholic drinks;Jack Daniel's Fire;;50 ml;20;RO
+Alcoholic drinks;Jack Daniel's Fire;;50 ml;20;EN
 Alcoholic drinks;Gentleman Jack;+ 5 cola / pipa (narghilea);700 ml;308;HU
 Alcoholic drinks;Gentleman Jack;+ 5 cola / narghilea;700 ml;308;RO
 Alcoholic drinks;Gentleman Jack;+ 5 cola / hookah;700 ml;308;EN
@@ -86,6 +98,12 @@ Alcoholic drinks;CHIVAS REGAL 12 YEAR;+ 5 cola / hookah;1000 ml;440;EN
 Alcoholic drinks;CHIVAS REGAL 12 YEAR;;50 ml;22;HU
 Alcoholic drinks;CHIVAS REGAL 12 YEAR;;50 ml;22;RO
 Alcoholic drinks;CHIVAS REGAL 12 YEAR;;50 ml;22;EN
+Alcoholic drinks;CLAN CAMPBELL;+ 5 cola / pipa (narghilea);1000 ml;280;HU
+Alcoholic drinks;CLAN CAMPBELL;+ 5 cola / pipa (narghilea);1000 ml;280;RO
+Alcoholic drinks;CLAN CAMPBELL;+ 5 cola / pipa (narghilea);1000 ml;280;EN
+Alcoholic drinks;CLAN CAMPBELL;;50 ml;14;HU
+Alcoholic drinks;CLAN CAMPBELL;;50 ml;14;RO
+Alcoholic drinks;CLAN CAMPBELL;;50 ml;14;EN
 Alcoholic drinks;JAMESON;+ 5 cola / pipa (narghilea);1000 ml;260;HU
 Alcoholic drinks;JAMESON;+ 5 cola / narghilea;1000 ml;260;RO
 Alcoholic drinks;JAMESON;+ 5 cola / hookah;1000 ml;260;EN
@@ -104,6 +122,12 @@ Alcoholic drinks;ABSOLUT VODKA;+ 5 cola / hookah;1000 ml;240;EN
 Alcoholic drinks;ABSOLUT VODKA;;50 ml;12;HU
 Alcoholic drinks;ABSOLUT VODKA;;50 ml;12;RO
 Alcoholic drinks;ABSOLUT VODKA;;50 ml;12;EN
+Alcoholic drinks;XEREDA VODKA;;1000 ml;80;HU
+Alcoholic drinks;XEREDA VODKA;;1000 ml;80;RO
+Alcoholic drinks;XEREDA VODKA;;1000 ml;80;EN
+Alcoholic drinks;XEREDA VODKA;;50 ml;8;HU
+Alcoholic drinks;XEREDA VODKA;;50 ml;8;RO
+Alcoholic drinks;XEREDA VODKA;;50 ml;8;EN
 Alcoholic drinks;BAMBU XO;+ 5 cola / pipa (narghilea);700 ml;420;HU
 Alcoholic drinks;BAMBU XO;+ 5 cola / narghilea;700 ml;420;RO
 Alcoholic drinks;BAMBU XO;+ 5 cola / hookah;700 ml;420;EN
@@ -122,12 +146,12 @@ Alcoholic drinks;BACARDI CARTA BLANCA;;1000 ml;300;EN
 Alcoholic drinks;BACARDI CARTA BLANCA;;50 ml;15;HU
 Alcoholic drinks;BACARDI CARTA BLANCA;;50 ml;15;RO
 Alcoholic drinks;BACARDI CARTA BLANCA;;50 ml;15;EN
-Alcoholic drinks;BACARDI SPICED;;700 ml;210;HU
-Alcoholic drinks;BACARDI SPICED;;700 ml;210;RO
-Alcoholic drinks;BACARDI SPICED;;700 ml;210;EN
-Alcoholic drinks;BACARDI SPICED;;50 ml;15;HU
-Alcoholic drinks;BACARDI SPICED;;50 ml;15;RO
-Alcoholic drinks;BACARDI SPICED;;50 ml;15;EN
+Alcoholic drinks;BACARDI SPICED;;700 ml;238;HU
+Alcoholic drinks;BACARDI SPICED;;700 ml;238;RO
+Alcoholic drinks;BACARDI SPICED;;700 ml;238;EN
+Alcoholic drinks;BACARDI SPICED;;50 ml;17;HU
+Alcoholic drinks;BACARDI SPICED;;50 ml;17;RO
+Alcoholic drinks;BACARDI SPICED;;50 ml;17;EN
 Alcoholic drinks;HAVANNA CLUB SPICED;;700 ml;210;HU
 Alcoholic drinks;HAVANNA CLUB SPICED;;700 ml;210;RO
 Alcoholic drinks;HAVANNA CLUB SPICED;;700 ml;210;EN
@@ -158,6 +182,12 @@ Alcoholic drinks;UNICUM SZILVA;;1000 ml;300;EN
 Alcoholic drinks;UNICUM SZILVA;;50 ml;15;HU
 Alcoholic drinks;UNICUM SZILVA;;50 ml;15;RO
 Alcoholic drinks;UNICUM SZILVA;;50 ml;15;EN
+Alcoholic drinks;UNICUM ORANGE BITTER;;1000 ml;196;HU
+Alcoholic drinks;UNICUM ORANGE BITTER;;1000 ml;196;RO
+Alcoholic drinks;UNICUM ORANGE BITTER;;1000 ml;196;EN
+Alcoholic drinks;UNICUM ORANGE BITTER;;50 ml;14;HU
+Alcoholic drinks;UNICUM ORANGE BITTER;;50 ml;14;RO
+Alcoholic drinks;UNICUM ORANGE BITTER;;50 ml;14;EN
 Alcoholic drinks;TATRATEA 42%;;700 ml;252;HU
 Alcoholic drinks;TATRATEA 42%;;700 ml;252;RO
 Alcoholic drinks;TATRATEA 42%;;700 ml;252;EN
@@ -224,15 +254,30 @@ Shots;KAMIKAZE;;;10;EN
 Shots;MARIHUANA;;;10;HU
 Shots;MARIHUANA;;;10;RO
 Shots;MARIHUANA;;;10;EN
-Shots;MEDUZA;;;10;HU
-Shots;MEDUZA;;;10;RO
-Shots;MEDUZA;;;10;EN
+Shots;B52;;;10;HU
+Shots;B52;;;10;RO
+Shots;B52;;;10;EN
 Shots;RED BRAIN;;;10;HU
 Shots;RED BRAIN;;;10;RO
 Shots;RED BRAIN;;;10;EN
-Shots;TEQUILA HERENCIA;;;12.5;HU
-Shots;TEQUILA HERENCIA;;;12.5;RO
-Shots;TEQUILA HERENCIA;;;12.5;EN
+Shots;TEQUILA;;;7;HU
+Shots;TEQUILA;;;7;RO
+Shots;TEQUILA;;;7;EN
+Shots;JACK DANIEL'S;;;9;HU
+Shots;JACK DANIEL'S;;;9;RO
+Shots;JACK DANIEL'S;;;9;EN
+Shots;JAGERMEISTER;;;8;HU
+Shots;JAGERMEISTER;;;8;RO
+Shots;JAGERMESITER;;;8;EN
+Shots;TATRATEA 42%;;;10;HU
+Shots;TATRATEA 42%;;;10;RO
+Shots;TATRATEA 42%;;;10;EN
+Shots;TATRATEA 52%;;;10;HU
+Shots;TATRATEA 52%;;;10;RO
+Shots;TATRATEA 52%;;;10;EN
+Shots;TATRATEA 62%;;;10;HU
+Shots;TATRATEA 62%;;;10;RO
+Shots;TATRATEA 62%;;;10;EN
 Cocktails;WHISKEY COLA;whiskey, cola, citrom;;20;HU
 Cocktails;WHISKEY COLA;whiskey, cola, lămâie;;20;RO
 Cocktails;WHISKEY COLA;whiskey, cola, lemon;;20;EN
@@ -248,9 +293,9 @@ Cocktails;PINK GIN TONIC;pink gin, pink tonic, lemon;;20;EN
 Cocktails;SEX ON THE BEACH;vodka, őszibarack likőr, narancslé;;20;HU
 Cocktails;SEX ON THE BEACH;vodcă, lichior de piersici, suc de portocale;;20;RO
 Cocktails;SEX ON THE BEACH;vodka, peach liqueur, orange juice;;20;EN
-Cocktails;MOJITO;fehér rum, cukorszirup, lime;;20;HU
-Cocktails;MOJITO;rom alb, sirop de zahăr, lime;;20;RO
-Cocktails;MOJITO;white rum, sugar syrup, lime;;20;EN
+Cocktails;MOJITO;fehér rum, cukorszirup, lime, menta levél, Sprite;;20;HU
+Cocktails;MOJITO;rom alb, sirop de zahăr, lime, frunză de mentă, Sprite;;20;RO
+Cocktails;MOJITO;white rum, sugar syrup, lime, mint leaf, Sprite;;20;EN
 Cocktails;SCREWDRIVER;vodka, narancslé;;20;HU
 Cocktails;SCREWDRIVER;vodcă, suc de portocale;;20;RO
 Cocktails;SCREWDRIVER;vodka, orange juice;;20;EN
@@ -269,24 +314,27 @@ Cocktails;MALIBU BREEZE;malibu, cranberry juice, pineapple juice;;20;EN
 Cocktails;JAGER BOMBA;jagermaister, energiaital;;20;HU
 Cocktails;JAGER BOMBA;jägermeister, băutură energizantă;;20;RO
 Cocktails;JAGER BOMBA;jägermeister, energy drink;;20;EN
-Alcohol free cocktails;VIRGIN MOJITO;cukorszirup, lime, mentalevél;;20;HU
-Alcohol free cocktails;VIRGIN MOJITO;sirop de zahăr, lime, frunze de mentă;;20;RO
-Alcohol free cocktails;VIRGIN MOJITO;sugar syrup, lime, mint leaves;;20;EN
-Alcohol free cocktails;STRAWBERRY VIRGIN MOJITO;eper püré, cukorszirup, lime;;20;HU
-Alcohol free cocktails;STRAWBERRY VIRGIN MOJITO;piure de căpșuni, sirop de zahăr, lime;;20;RO
-Alcohol free cocktails;STRAWBERRY VIRGIN MOJITO;strawberry purée, sugar syrup, lime;;20;EN
-Alcohol free cocktails;SAFE ON THE BEACH;őszibarack lé, narancslé, áfonyalé;;20;HU
-Alcohol free cocktails;SAFE ON THE BEACH;őszibarack lé, narancslé, áfonyalé;;20;RO
-Alcohol free cocktails;SAFE ON THE BEACH;őszibarack lé, narancslé, áfonyalé;;20;EN
-Alcohol free cocktails;ATOMIC CAT;narancslé, tonic;;20;HU
-Alcohol free cocktails;ATOMIC CAT;suc de portocale, tonic;;20;RO
-Alcohol free cocktails;ATOMIC CAT;orange juice, tonic;;20;EN
-Alcohol free cocktails;DOLCE & GABBANA;cola, gránátalma lé, citrom;;20;HU
-Alcohol free cocktails;DOLCE & GABBANA;cola, suc de rodie, lămâie;;20;RO
-Alcohol free cocktails;DOLCE & GABBANA;cola, pomegranate juice, lemon;;20;EN
-Alcohol free cocktails;CINDERELLA;citromlé, narancslé, ananászlé, szódavíz, gránátalma szirup;;20;HU
-Alcohol free cocktails;CINDERELLA;suc de lămâie, suc de portocale, suc de ananas, apă minerală, sirop de grenadină;;20;RO
-Alcohol free cocktails;CINDERELLA;lemon juice, orange juice, pineapple juice, soda water, grenadine syrup;;20;EN
+Alcohol free cocktails;VIRGIN MOJITO;cukorszirup, lime, mentalevél;;15;HU
+Alcohol free cocktails;VIRGIN MOJITO;sirop de zahăr, lime, frunze de mentă;;15;RO
+Alcohol free cocktails;VIRGIN MOJITO;sugar syrup, lime, mint leaves;;15;EN
+Alcohol free cocktails;STRAWBERRY VIRGIN MOJITO;eper püré, cukorszirup, lime;;15;HU
+Alcohol free cocktails;STRAWBERRY VIRGIN MOJITO;piure de căpșuni, sirop de zahăr, lime;;15;RO
+Alcohol free cocktails;STRAWBERRY VIRGIN MOJITO;strawberry purée, sugar syrup, lime;;15;EN
+Alcohol free cocktails;SAFE ON THE BEACH;őszibarack lé, narancslé, áfonyalé;;15;HU
+Alcohol free cocktails;SAFE ON THE BEACH;őszibarack lé, narancslé, áfonyalé;;15;RO
+Alcohol free cocktails;SAFE ON THE BEACH;őszibarack lé, narancslé, áfonyalé;;15;EN
+Alcohol free cocktails;ATOMIC CAT;narancslé, tonic;;15;HU
+Alcohol free cocktails;ATOMIC CAT;suc de portocale, tonic;;15;RO
+Alcohol free cocktails;ATOMIC CAT;orange juice, tonic;;15;EN
+Alcohol free cocktails;DOLCE & GABBANA;cola, gránátalma lé, citrom;;15;HU
+Alcohol free cocktails;DOLCE & GABBANA;cola, suc de rodie, lămâie;;15;RO
+Alcohol free cocktails;DOLCE & GABBANA;cola, pomegranate juice, lemon;;15;EN
+Alcohol free cocktails;CINDERELLA;citromlé, narancslé, ananászlé, szódavíz, gránátalma szirup;;15;HU
+Alcohol free cocktails;CINDERELLA;suc de lămâie, suc de portocale, suc de ananas, apă minerală, sirop de grenadină;;15;RO
+Alcohol free cocktails;CINDERELLA;lemon juice, orange juice, pineapple juice, soda water, grenadine syrup;;15;EN
+Alcohol free cocktails;MARGARITA;frissen facsart lime lé, narancs lé, cukorszirup, Sprite;;15;HU
+Alcohol free cocktails;MARGARITA;suc de lime proaspăt stors, suc de portocale, sirop de zahăr, Sprite;;15;RO
+Alcohol free cocktails;MARGARITA;freshly squeezed lime juice, orange juice, sugar syrup, Sprite;;15;EN
 Beers;HEINEKEN;;400 ml;12;HU
 Beers;HEINEKEN;;400 ml;12;RO
 Beers;HEINEKEN;;400 ml;12;EN
@@ -302,6 +350,12 @@ Beers;GOLDEN BRAU;;500 ml;9;EN
 Beers;BIRRA MORETTI;;500 ml;9;HU
 Beers;BIRRA MORETTI;;500 ml;9;RO
 Beers;BIRRA MORETTI;;500 ml;9;EN
+Beers;CORONA;;355 ml;15;HU
+Beers;CORONA;;355 ml;15;RO
+Beers;CORONA;;355 ml;15;EN
+Beers;AMSTEL;;330 ml;9;HU
+Beers;AMSTEL;;330 ml;9;RO
+Beers;AMSTEL;;330 ml;9;EN
 Beers;CIUC PREMIUM;;500 ml;9;HU
 Beers;CIUC PREMIUM;;500 ml;9;RO
 Beers;CIUC PREMIUM;;500 ml;9;EN
@@ -365,6 +419,27 @@ Wines;SCHWABEN WEIN;rosé / semi-dry;750 ml;60;EN
 Wines;SCHWABEN WEIN;rosé / félszáraz;150 ml;12;HU
 Wines;SCHWABEN WEIN;rosé / demisec;150 ml;12;RO
 Wines;SCHWABEN WEIN;rosé / semi-dry;150 ml;12;EN
+Wines;JUHÁSZ;fehér / félédes;750 ml;50;HU
+Wines;JUHÁSZ;fehér / félédes;750 ml;50;RO
+Wines;JUHÁSZ;fehér / félédes;750 ml;50;EN
+Wines;JUHÁSZ;fehér / félédes;150 ml;10;HU
+Wines;JUHÁSZ;fehér / félédes;150 ml;10;RO
+Wines;JUHÁSZ;fehér / félédes;150 ml;10;EN
+Champagne;CA'DI RAJO;prosecco;750 ml;80;HU
+Champagne;CA'DI RAJO;prosecco;750 ml;80;RO
+Champagne;CA'DI RAJO;prosecco;750 ml;80;EN
+Champagne;CA'DI RAJO;prosecco;150 ml;15;HU
+Champagne;CA'DI RAJO;prosecco;150 ml;15;RO
+Champagne;CA'DI RAJO;prosecco;150 ml;15;EN
+Champagne;CA'DI RAJO VALDOBBIADENE;prosecco;750 ml;200;HU
+Champagne;CA'DI RAJO VALDOBBIADENE;prosecco;750 ml;200;RO
+Champagne;CA'DI RAJO VALDOBBIADENE;prosecco;750 ml;200;EN
+Champagne;BELAIRE Luxe Rosé;750 ml;500;HU
+Champagne;BELAIRE Luxe Rosé;750 ml;500;RO
+Champagne;BELAIRE Luxe Rosé;750 ml;500;EN
+Champagne;Möet&Chandon;750 ml;550;HU
+Champagne;Möet&Chandon;750 ml;550;RO
+Champagne;Möet&Chandon;750 ml;550;EN
 Hookahs;VÍZIPIPA 20 GR DOHÁNNYAL;narghilea cu tutun 20 gr;;45;HU
 Hookahs;Narghilea cu 20 g tutun;narghilea cu 20 g tutun;;45;RO
 Hookahs;Hookah with 20 g tobacco;hookah with 20 g tobacco;;45;EN
@@ -389,4 +464,5 @@ Snacks;Peanuts;;100 g;5;EN
 Snacks;ROPI;;100 gr;5;HU
 Snacks;Ropi (sticksuri sărate);;100 g;5;RO
 Snacks;Salty pretzel sticks;;100 g;5;EN
+
 
