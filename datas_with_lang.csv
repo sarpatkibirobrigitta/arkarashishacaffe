@@ -383,6 +383,12 @@ Wines;FRITTMANN;red / dry;750 ml;50;EN
 Wines;FRITTMANN;vörös / száraz;150 ml;10;HU
 Wines;FRITTMANN;roșu / sec;150 ml;10;RO
 Wines;FRITTMANN;red / dry;150 ml;10;EN
+Wines;AREZAN Chardonnay;fehér / száraz;750 ml;95;HU
+Wines;AREZAN Chardonnay;alb / sec;750 ml;95;RO
+Wines;AREZAN Chardonnay;white / dry;750 ml;95;EN
+Wines;AREZAN Chardonnay;fehér / száraz;150 ml;19;HU
+Wines;AREZAN Chardonnay;alb / sec;150 ml;19;RO
+Wines;AREZAN Chardonnay;white / dry;150 ml;19;EN
 Wines;PURCARI NOCTURNE;fehér / száraz;750 ml;95;HU
 Wines;PURCARI NOCTURNE;alb / sec;750 ml;95;RO
 Wines;PURCARI NOCTURNE;white / dry;750 ml;95;EN
@@ -401,6 +407,24 @@ Wines;GEDEON BIRTOK;white / dry;750 ml;60;EN
 Wines;GEDEON BIRTOK;fehér / száraz;150 ml;12;HU
 Wines;GEDEON BIRTOK;alb / sec;150 ml;12;RO
 Wines;GEDEON BIRTOK;white / dry;150 ml;12;EN
+Wines;CHARME de la Mer;rosé / száraz;750 ml;150;HU
+Wines;CHARME de la Mer;rosé / sec;750 ml;150;RO
+Wines;CHARME de la Mer;rosé / dry;750 ml;150;EN
+Wines;CHARME de la Mer;rosé / száraz;150 ml;??;HU
+Wines;CHARME de la Mer;rosé / sec;150 ml;??;RO
+Wines;CHARME de la Mer;rosé / dry;150 ml;??;EN
+Wines;CHARME de la Mer;rosé / félszáraz;750 ml;150;HU
+Wines;CHARME de la Mer;rosé / demisec;750 ml;150;RO
+Wines;CHARME de la Mer;rosé / semi-dry;750 ml;150;EN
+Wines;CHARME de la Mer;rosé / félszáraz;150 ml;??;HU
+Wines;CHARME de la Mer;rosé / demisec;150 ml;??;RO
+Wines;CHARME de la Mer;rosé / semi-dry;150 ml;??;EN
+Wines;AREZAN Cabernet Sauvignon;rosé / száraz;750 ml;95;HU
+Wines;AREZAN Cabernet Sauvignon;rosé / sec;750 ml;95;RO
+Wines;AREZAN Cabernet Sauvignon;rosé / dry;750 ml;95;EN
+Wines;AREZAN Cabernet Sauvignon;rosé / száraz;150 ml;19;HU
+Wines;AREZAN Cabernet Sauvignon;rosé / sec;150 ml;19;RO
+Wines;AREZAN Cabernet Sauvignon;rosé / dry;150 ml;19;EN
 Wines;PURCARI NOCTURNE;rosé / száraz;750 ml;95;HU
 Wines;PURCARI NOCTURNE;rosé / sec;750 ml;95;RO
 Wines;PURCARI NOCTURNE;rosé / dry;750 ml;95;EN
