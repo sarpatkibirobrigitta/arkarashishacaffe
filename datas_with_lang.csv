@@ -290,6 +290,9 @@ Cocktails;GIN TONIC;gin, tonic, lemon;;20;EN
 Cocktails;PINK GIN TONIC;pink gin, pink tonic, citrom;;20;HU
 Cocktails;PINK GIN TONIC;gin roz, tonic roz, lămâie;;20;RO
 Cocktails;PINK GIN TONIC;pink gin, pink tonic, lemon;;20;EN
+Cocktails;GIN DAISY;pink gin, triple sec, citrom, cukorszirup, szódavíz;;20;HU
+Cocktails;GIN DAISY;gin roz, triple sec, lămâie, sirop de zahăr, apă minerală;;20;RO
+Cocktails;GIN DAISY;pink gin, triple sec, lemon, sugar syrup, soda water;;20;EN
 Cocktails;SEX ON THE BEACH;vodka, őszibarack likőr, narancslé;;20;HU
 Cocktails;SEX ON THE BEACH;vodcă, lichior de piersici, suc de portocale;;20;RO
 Cocktails;SEX ON THE BEACH;vodka, peach liqueur, orange juice;;20;EN
@@ -305,6 +308,9 @@ Cocktails;BLUE LAGOON;vodka, curaçao, sugar syrup, soda water, lime, lemon, ora
 Cocktails;APEROL SPRITZ;aperol, prosecco, szódavíz, narancs;;20;HU
 Cocktails;APEROL SPRITZ;aperol, prosecco, apă minerală, portocală;;20;RO
 Cocktails;APEROL SPRITZ;aperol, prosecco, soda water, orange;;20;EN
+Cocktails;HUGO;prosecco, bodza szörp, szódavíz, lime, menta;;20;HU
+Cocktails;HUGO;prosecco, sirop de soc, apă minerală, lime, mentă;;20;RO
+Cocktails;HUGO;prosecco, elderflower syrop, soda water, lime, mint;;20;EN
 Cocktails;MALIBU;malibu, narancslé, áfonyalé, lime, narancs;;20;HU
 Cocktails;MALIBU;malibu, suc de portocale, suc de merișoare, lime, portocală;;20;RO
 Cocktails;MALIBU;malibu, orange juice, cranberry juice, lime, orange;;20;EN
@@ -314,6 +320,9 @@ Cocktails;MALIBU BREEZE;malibu, cranberry juice, pineapple juice;;20;EN
 Cocktails;JAGER BOMBA;jagermaister, energiaital;;20;HU
 Cocktails;JAGER BOMBA;jägermeister, băutură energizantă;;20;RO
 Cocktails;JAGER BOMBA;jägermeister, energy drink;;20;EN
+Alcohol free cocktails;SUMMER FUSION;citromlé, eper szirup, kiwi szirup, blue curacao, szódavízzel/Sprite;;15;HU
+Alcohol free cocktails;SUMMER FUSION;suc de lămâie, piure de căpșuni, sirop de kiwi, blue curacao, apă minerală/Sprite;;15;RO
+Alcohol free cocktails;SUMMER FUSION;lemon juice, strawberry purée, kiwi syrup, blue caracao, soda water/Sprite;;15;EN
 Alcohol free cocktails;VIRGIN MOJITO;cukorszirup, lime, mentalevél;;15;HU
 Alcohol free cocktails;VIRGIN MOJITO;sirop de zahăr, lime, frunze de mentă;;15;RO
 Alcohol free cocktails;VIRGIN MOJITO;sugar syrup, lime, mint leaves;;15;EN
